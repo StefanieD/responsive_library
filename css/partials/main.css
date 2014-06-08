@@ -1,0 +1,14 @@
+/* --------------- RESPONSIVE COLUMNS --------------------- */
+.resp-1-column {
+  width: 100%; }
+
+.resp-2-columns {
+  display: flex;
+  display: -webkit-flex;
+  /*Firefox*/
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  /*Firefox*/ }
+
+.resp-2-columns div {
+  width: 50%; }
