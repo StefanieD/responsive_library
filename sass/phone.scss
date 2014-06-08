@@ -1,0 +1,36 @@
+@import "functions.scss";
+
+@media screen and (max-width: 480px) {
+	
+	/* --------------- MAIN ELEMENTS --------------------- */
+	h1 {
+		font-size: 1.75rem;/*28 px*/
+		margin: 0;
+	}
+	h2 {
+		font-size: 1.75rem;/*28 px*/
+	}
+	h3 {
+		font-size: 1.5rem;/*24 px*/
+	}
+	h4 {
+		font-size: 1.25rem;/*20 px*/
+	}
+	h5 {
+		font-size: 1.125rem;/*18 px*/
+	}
+	h6 {
+		font-size: 1rem;/*16 px*/
+	}
+
+	/* --------------- RESPONSIVE COLUMNS --------------------- */
+	.v-phone {
+		@include flex-vertical();
+	}
+	.v-phone > div {
+		width: 100%;
+	}
+	.phone-not-visible {
+		display: none;
+	}
+}

@@ -1,0 +1,12 @@
+@mixin flex() {
+	display: flex;
+    display: -webkit-flex; /*Firefox*/
+}
+@mixin flex-horizontal() {
+	flex-direction: row;
+    -webkit-flex-direction: row; /*Firefox*/
+}
+@mixin flex-vertical() {
+	flex-direction: column;
+    -webkit-flex-direction: column; /*Firefox*/
+}

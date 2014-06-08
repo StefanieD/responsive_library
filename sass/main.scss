@@ -1,0 +1,40 @@
+@import "functions.scss";
+
+/* --------------- MAIN ELEMENTS -------------------------- */
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* --------------- ICONS ---------------------------------- */
+.resp-menu-icon {
+	background: url(../images/menu_icon_black.png) no-repeat center center;
+}
+.resp-menu-icon-white {
+	background: url(../images/menu_icon_white.png) no-repeat center center;
+}
+
+/* --------------- RESPONSIVE COLUMNS --------------------- */
+.resp-1-column {
+	width: 100%;
+}
+.resp-2-columns {
+	@include flex();
+	@include flex-horizontal();
+}
+.resp-2-columns > div {
+	width: 50%;
+}
+
+/*shrink columns*/
+.resp-2-columns.left-shrink > div:nth-of-type(1) {
+	width: 30%;
+}
+.resp-2-columns.left-shrink > div:nth-of-type(2) {
+	width: 70%;
+}
+
+/* --------------- RESPONSIVE ROWS --------------------- */
+.resp-3-rows {
+	@include flex();
+	@include flex-vertical();
+}
