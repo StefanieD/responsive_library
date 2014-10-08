@@ -1,8 +1,11 @@
-@import "functions.scss";
+@import "partials/functions.scss";
 
 @media screen and (max-width: 480px) {
 	
 	/* --------------- MAIN ELEMENTS --------------------- */
+	.phone-hidden {
+		display: none;
+	}
 	h1 {
 		font-size: 1.75rem;/*28 px*/
 		margin: 0;
@@ -29,8 +32,5 @@
 	}
 	.v-phone > div {
 		width: 100%;
-	}
-	.phone-not-visible {
-		display: none;
 	}
 }
